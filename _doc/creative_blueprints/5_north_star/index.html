@@ -1,0 +1,109 @@
+<section class="w-full h-full overflow-auto bg-white">
+  <div class="w-full h-full flex flex-col" style="padding:36px 48px;">
+
+    <!-- Header row -->
+    <div style="display:flex;align-items:flex-start;justify-content:space-between;margin-bottom:20px;">
+      <div>
+        <span style="font-size:0.7rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:#0E7490;">North Star Metric</span>
+        <h2 style="font-size:1.75rem;font-weight:800;color:#0F172A;margin-top:4px;line-height:1.2;">Weekly Verified Operations</h2>
+      </div>
+      <span style="padding:7px 14px;border-radius:999px;font-size:0.72rem;font-weight:600;background:#FEF3C7;color:#92400E;white-space:nowrap;margin-top:4px;">
+        Projected impact — based on your inputs
+      </span>
+    </div>
+
+    <!-- Two-column body -->
+    <div style="display:grid;grid-template-columns:1.15fr 1fr;gap:16px;flex:1;">
+
+      <!-- Left: Operations definition + WVO formula -->
+      <div style="display:flex;flex-direction:column;gap:12px;">
+
+        <!-- Operations -->
+        <div style="background:#F8FAFC;border-radius:12px;padding:16px;border:1px solid #E2E8F0;">
+          <div style="font-size:0.68rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:#64748B;margin-bottom:10px;">Verified Operations — what this app exists to perform</div>
+          <div style="display:flex;flex-direction:column;gap:9px;">
+            <div style="display:flex;align-items:flex-start;gap:10px;padding:10px 14px;background:#FFFFFF;border-radius:9px;border:1px solid #E2E8F0;">
+              <span style="width:10px;height:10px;border-radius:50%;background:#0E7490;flex-shrink:0;margin-top:4px;"></span>
+              <div>
+                <div style="font-size:0.86rem;font-weight:600;color:#0F172A;">Prescription Dispensed &amp; Verified</div>
+                <div style="font-size:0.75rem;color:#64748B;margin-top:2px;line-height:1.5;">Each prescription recorded, accuracy-checked, and dispensed through the platform by staff</div>
+              </div>
+            </div>
+            <div style="display:flex;align-items:flex-start;gap:10px;padding:10px 14px;background:#FFFFFF;border-radius:9px;border:1px solid #E2E8F0;">
+              <span style="width:10px;height:10px;border-radius:50%;background:#F59E0B;flex-shrink:0;margin-top:4px;"></span>
+              <div>
+                <div style="font-size:0.86rem;font-weight:600;color:#0F172A;">Inventory Expiry Check Completed</div>
+                <div style="font-size:0.75rem;color:#64748B;margin-top:2px;line-height:1.5;">Each inventory review where expiry status is confirmed and actioned in the system</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- WVO Formula -->
+        <div style="background:#F0F9FF;border-radius:12px;padding:16px;border:1px solid #BAE6FD;flex:1;">
+          <div style="font-size:0.68rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:#0E7490;margin-bottom:12px;">Weekly Volume — formula</div>
+          <div style="display:flex;flex-direction:column;gap:10px;">
+            <div style="display:flex;align-items:center;gap:7px;flex-wrap:wrap;">
+              <span style="padding:4px 10px;background:#FFFBEB;border:1px dashed #F59E0B;border-radius:6px;font-size:0.73rem;color:#92400E;font-weight:500;white-space:nowrap;">Assumption — adjust this</span>
+              <span style="font-size:0.82rem;color:#1E293B;font-weight:500;">50 Rx/day</span>
+              <span style="font-size:0.82rem;color:#64748B;">× 6 days/week</span>
+              <span style="font-size:0.9rem;font-weight:700;color:#0E7490;">= 300 Rx/week</span>
+            </div>
+            <div style="display:flex;align-items:center;gap:7px;flex-wrap:wrap;">
+              <span style="padding:4px 10px;background:#FFFBEB;border:1px dashed #F59E0B;border-radius:6px;font-size:0.73rem;color:#92400E;font-weight:500;white-space:nowrap;">Assumption — adjust this</span>
+              <span style="font-size:0.82rem;color:#1E293B;font-weight:500;">2 full inventory checks/week</span>
+              <span style="font-size:0.9rem;font-weight:700;color:#0E7490;">= 2/week</span>
+            </div>
+            <div style="border-top:1px solid #BAE6FD;padding-top:10px;display:flex;align-items:center;justify-content:space-between;">
+              <span style="font-size:0.86rem;font-weight:600;color:#0F172A;">Total Verified Operations / Week</span>
+              <span style="font-size:1.5rem;font-weight:800;color:#0B4A6F;">~302</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Right: Value derivation + totals -->
+      <div style="display:flex;flex-direction:column;gap:12px;">
+
+        <!-- Value per operation -->
+        <div style="background:#F8FAFC;border-radius:12px;padding:16px;border:1px solid #E2E8F0;flex:1;">
+          <div style="font-size:0.68rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:#64748B;margin-bottom:12px;">Value Per Operation — time saved</div>
+          <div style="display:flex;flex-direction:column;gap:9px;">
+            <div style="display:flex;align-items:flex-start;gap:7px;">
+              <span style="padding:3px 9px;background:#FFFBEB;border:1px dashed #F59E0B;border-radius:5px;font-size:0.72rem;color:#92400E;white-space:nowrap;margin-top:1px;">Assumption</span>
+              <span style="font-size:0.8rem;color:#475569;line-height:1.55;">4 min saved per prescription vs. manual paper log entry</span>
+            </div>
+            <div style="display:flex;align-items:flex-start;gap:7px;">
+              <span style="padding:3px 9px;background:#FFFBEB;border:1px dashed #F59E0B;border-radius:5px;font-size:0.72rem;color:#92400E;white-space:nowrap;margin-top:1px;">Assumption</span>
+              <span style="font-size:0.8rem;color:#475569;line-height:1.55;">Pharmacist / staff wage ~$25/hr = $0.42 per minute</span>
+            </div>
+            <div style="background:#E0F2FE;border-radius:8px;padding:10px 12px;margin-top:2px;">
+              <div style="font-size:0.8rem;color:#0369A1;line-height:1.6;">
+                300 Rx × 4 min × $0.42 = <strong style="color:#0B4A6F;">$504 saved / week</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Projected annual value card -->
+        <div style="border-radius:12px;padding:20px;background:#0B4A6F;">
+          <div style="font-size:0.68rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:#7DD3FC;margin-bottom:8px;">Projected Annual Value</div>
+          <div style="font-size:2.5rem;font-weight:800;color:#FFFFFF;line-height:1;margin-bottom:4px;">$26,208</div>
+          <div style="font-size:0.82rem;color:#BAE6FD;margin-bottom:10px;">per year — time savings alone</div>
+          <div style="height:1px;background:rgba(255,255,255,0.15);margin-bottom:10px;"></div>
+          <div style="font-size:0.74rem;color:#93C5FD;line-height:1.65;">
+            $504/week × 52 weeks = $26,208/yr<br>
+            <em>Excludes value of errors avoided, fines prevented, and expired stock wastage eliminated.</em>
+          </div>
+        </div>
+
+        <!-- Adjust prompt -->
+        <div style="padding:10px 14px;background:#F0FDF4;border-radius:10px;border:1px solid #BBF7D0;">
+          <div style="font-size:0.75rem;color:#166534;line-height:1.6;">💡 Replace the assumption chips with your actual daily prescription volume to see your real projected value.</div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
