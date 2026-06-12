@@ -1,0 +1,55 @@
+<style>
+.mode-landscape .sl-root { flex-direction: row; }
+.mode-portrait .sl-root { flex-direction: column; }
+.mode-portrait .sl-left { padding: 32px; }
+.mode-portrait .sl-right { flex: 0 0 40%; }
+</style>
+<section class="w-full h-full overflow-auto bg-white">
+  <div class="sl-root w-full h-full flex">
+
+    <!-- Left: editorial copy panel -->
+    <div class="sl-left flex flex-col justify-between" style="flex:1.1;background:#0B4A6F;padding:48px;">
+      <div>
+        <div style="display:flex;align-items:center;gap:10px;margin-bottom:32px;">
+          <div style="width:28px;height:3px;background:#38BDF8;border-radius:2px;"></div>
+          <span style="font-size:0.7rem;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:#7DD3FC;">Pharmacy Operations Platform</span>
+        </div>
+        <h1 style="font-size:2.6rem;font-weight:800;line-height:1.18;color:#FFFFFF;margin-bottom:20px;">
+          Every Drug Tracked.<br>Every Prescription<br>Verified.
+        </h1>
+        <p style="color:#BAE6FD;font-size:1rem;line-height:1.7;max-width:340px;">
+          Prevent expired stock before it reaches a patient. Catch prescription errors before they reach the counter. One platform — complete operational control.
+        </p>
+      </div>
+      <div>
+        <div style="height:1px;background:rgba(255,255,255,0.15);margin-bottom:20px;"></div>
+        <data-attribution />
+      </div>
+    </div>
+
+    <!-- Right: pharmacy image + floating status pills -->
+    <div class="sl-right relative overflow-hidden" style="flex:0.9;">
+      <img
+        src="https://api.qb-deck.quantumbyte.ai/common/image-generation?prompt=Modern+clean+pharmacy+interior+with+neatly+organized+medication+shelves+and+labels%2C+professional+healthcare+setting%2C+soft+blue+and+white+color+palette%2C+editorial+photography%2C+no+people%2C+no+text+overlays"
+        alt="Pharmacy interior"
+        style="width:100%;height:100%;object-fit:cover;"
+      />
+      <!-- Floating status badges -->
+      <div style="position:absolute;bottom:44px;left:20px;display:flex;flex-direction:column;gap:9px;">
+        <div style="display:flex;align-items:center;gap:9px;padding:9px 14px;background:rgba(255,255,255,0.97);border-radius:10px;box-shadow:0 3px 14px rgba(0,0,0,0.14);">
+          <span style="width:9px;height:9px;border-radius:50%;background:#22C55E;display:inline-block;flex-shrink:0;"></span>
+          <span style="font-size:0.78rem;font-weight:600;color:#0F172A;">248 items — within date</span>
+        </div>
+        <div style="display:flex;align-items:center;gap:9px;padding:9px 14px;background:rgba(255,255,255,0.97);border-radius:10px;box-shadow:0 3px 14px rgba(0,0,0,0.14);">
+          <span style="width:9px;height:9px;border-radius:50%;background:#F59E0B;display:inline-block;flex-shrink:0;"></span>
+          <span style="font-size:0.78rem;font-weight:600;color:#0F172A;">3 expiring within 7 days ↗</span>
+        </div>
+        <div style="display:flex;align-items:center;gap:9px;padding:9px 14px;background:rgba(255,255,255,0.97);border-radius:10px;box-shadow:0 3px 14px rgba(0,0,0,0.14);">
+          <span style="width:9px;height:9px;border-radius:50%;background:#3B82F6;display:inline-block;flex-shrink:0;"></span>
+          <span style="font-size:0.78rem;font-weight:600;color:#0F172A;">84 prescriptions today</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
